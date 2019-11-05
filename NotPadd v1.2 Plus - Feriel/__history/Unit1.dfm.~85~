@@ -1,0 +1,889 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'NotPadd Plus'
+  ClientHeight = 583
+  ClientWidth = 875
+  Color = clWhite
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -21
+  Font.Name = 'Roboto Cn'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 25
+  object Pan_all: TPanel
+    Left = 0
+    Top = 0
+    Width = 875
+    Height = 583
+    Align = alClient
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitWidth = 869
+    ExplicitHeight = 503
+    object Pan_reght: TPanel
+      AlignWithMargins = True
+      Left = 706
+      Top = 86
+      Width = 166
+      Height = 422
+      Align = alRight
+      BevelKind = bkFlat
+      BevelOuter = bvNone
+      Color = clWhite
+      ParentBackground = False
+      TabOrder = 0
+      ExplicitLeft = 709
+      ExplicitTop = 73
+      ExplicitHeight = 448
+      object btn_fonts: TButton
+        AlignWithMargins = True
+        Left = 10
+        Top = 161
+        Width = 142
+        Height = 49
+        Margins.Left = 10
+        Margins.Top = 10
+        Margins.Right = 10
+        Margins.Bottom = 5
+        Align = alTop
+        Caption = 'Font'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -24
+        Font.Name = 'Changa SemiBold'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 0
+        OnClick = btn_fontsClick
+        ExplicitLeft = 16
+        ExplicitTop = 152
+        ExplicitWidth = 137
+      end
+      object btn_color: TButton
+        AlignWithMargins = True
+        Left = 10
+        Top = 220
+        Width = 142
+        Height = 49
+        Margins.Left = 10
+        Margins.Top = 5
+        Margins.Right = 10
+        Align = alTop
+        Caption = 'COLOR'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -24
+        Font.Name = 'Changa SemiBold'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 1
+        OnClick = btn_colorClick
+        ExplicitLeft = 16
+        ExplicitTop = 207
+        ExplicitWidth = 137
+      end
+      object btn_about: TButton
+        AlignWithMargins = True
+        Left = 10
+        Top = 391
+        Width = 142
+        Height = 49
+        Margins.Left = 10
+        Margins.Top = 5
+        Margins.Right = 10
+        Align = alTop
+        Caption = 'A propos'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Changa'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 2
+        OnClick = btn_aboutClick
+        ExplicitTop = 446
+        ExplicitWidth = 146
+      end
+      object RadioGroup1: TRadioGroup
+        AlignWithMargins = True
+        Left = 5
+        Top = 5
+        Width = 152
+        Height = 146
+        Margins.Left = 5
+        Margins.Top = 5
+        Margins.Right = 5
+        Margins.Bottom = 0
+        Align = alTop
+        Caption = 'Font Position'
+        TabOrder = 3
+        ExplicitLeft = 0
+        ExplicitTop = 0
+        ExplicitWidth = 166
+      end
+      object Radiobtn_right: TRadioButton
+        Left = 16
+        Top = 36
+        Width = 137
+        Height = 17
+        Caption = 'DROITE'
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -21
+        Font.Name = 'Changa Medium'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 4
+        OnClick = Radiobtn_rightClick
+      end
+      object Radiobtn_center: TRadioButton
+        Left = 16
+        Top = 75
+        Width = 137
+        Height = 17
+        Caption = 'CENTER'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -21
+        Font.Name = 'Changa Medium'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 5
+        OnClick = Radiobtn_centerClick
+      end
+      object Radiobtn_left: TRadioButton
+        Left = 16
+        Top = 120
+        Width = 137
+        Height = 17
+        Caption = 'GAUCHE'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -21
+        Font.Name = 'Changa Medium'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 6
+        OnClick = Radiobtn_leftClick
+      end
+      object btn_slectAll: TButton
+        AlignWithMargins = True
+        Left = 10
+        Top = 277
+        Width = 142
+        Height = 49
+        Margins.Left = 10
+        Margins.Top = 5
+        Margins.Right = 10
+        Align = alTop
+        Caption = 'S'#233'lectionner tout'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Changa SemiBold'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 7
+        OnClick = btn_slectAllClick
+        ExplicitTop = 289
+        ExplicitWidth = 146
+      end
+      object btn_clear: TButton
+        AlignWithMargins = True
+        Left = 10
+        Top = 334
+        Width = 142
+        Height = 49
+        Margins.Left = 10
+        Margins.Top = 5
+        Margins.Right = 10
+        Align = alTop
+        Caption = 'Effacer'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -24
+        Font.Name = 'Changa SemiBold'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 8
+        OnClick = btn_clearClick
+        ExplicitLeft = 18
+        ExplicitTop = 399
+        ExplicitWidth = 146
+      end
+    end
+    object Pane_top: TPanel
+      AlignWithMargins = True
+      Left = 50
+      Top = 5
+      Width = 775
+      Height = 73
+      Margins.Left = 50
+      Margins.Top = 5
+      Margins.Right = 50
+      Margins.Bottom = 5
+      Align = alTop
+      BevelKind = bkFlat
+      BevelOuter = bvNone
+      Color = clWhite
+      ParentBackground = False
+      TabOrder = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 875
+      object Label1: TLabel
+        AlignWithMargins = True
+        Left = 467
+        Top = 5
+        Width = 88
+        Height = 59
+        Margins.Left = 20
+        Margins.Top = 5
+        Margins.Right = 40
+        Margins.Bottom = 5
+        Align = alRight
+        Alignment = taCenter
+        Caption = 'DATE  :'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Roboto'
+        Font.Style = [fsBold]
+        ParentFont = False
+        Layout = tlCenter
+        ExplicitLeft = 686
+        ExplicitHeight = 33
+      end
+      object Labe_date: TLabel
+        AlignWithMargins = True
+        Left = 595
+        Top = 5
+        Width = 76
+        Height = 59
+        Margins.Left = 0
+        Margins.Top = 5
+        Margins.Right = 100
+        Margins.Bottom = 5
+        Align = alRight
+        Alignment = taCenter
+        Caption = 'DATE  :'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Roboto Cn'
+        Font.Style = []
+        ParentFont = False
+        Layout = tlCenter
+        ExplicitLeft = 806
+        ExplicitHeight = 33
+      end
+      object Label2: TLabel
+        AlignWithMargins = True
+        Left = 100
+        Top = 5
+        Width = 86
+        Height = 59
+        Margins.Left = 100
+        Margins.Top = 5
+        Margins.Right = 20
+        Margins.Bottom = 5
+        Align = alLeft
+        Alignment = taCenter
+        Caption = 'TIME  :'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Roboto'
+        Font.Style = [fsBold]
+        ParentFont = False
+        Layout = tlCenter
+        ExplicitHeight = 33
+      end
+      object Labe_time: TLabel
+        AlignWithMargins = True
+        Left = 216
+        Top = 5
+        Width = 72
+        Height = 59
+        Margins.Left = 10
+        Margins.Top = 5
+        Margins.Right = 0
+        Margins.Bottom = 5
+        Align = alLeft
+        Alignment = taCenter
+        Caption = 'TIME  :'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -27
+        Font.Name = 'Roboto Cn'
+        Font.Style = []
+        ParentFont = False
+        Layout = tlCenter
+        ExplicitHeight = 33
+      end
+    end
+    object Pan_left: TPanel
+      AlignWithMargins = True
+      Left = 3
+      Top = 86
+      Width = 166
+      Height = 422
+      Align = alLeft
+      BevelKind = bkFlat
+      BevelOuter = bvNone
+      Color = clWhite
+      ParentBackground = False
+      TabOrder = 2
+      ExplicitLeft = 0
+      ExplicitTop = 73
+      ExplicitHeight = 448
+      object RadioGroup2: TRadioGroup
+        AlignWithMargins = True
+        Left = 5
+        Top = 5
+        Width = 152
+        Height = 146
+        Margins.Left = 5
+        Margins.Top = 5
+        Margins.Right = 5
+        Margins.Bottom = 0
+        Align = alTop
+        Caption = 'Font OPTION'
+        TabOrder = 0
+        ExplicitLeft = 0
+        ExplicitTop = -16
+        ExplicitWidth = 166
+      end
+      object btn_open: TButton
+        AlignWithMargins = True
+        Left = 10
+        Top = 161
+        Width = 142
+        Height = 49
+        Margins.Left = 10
+        Margins.Top = 10
+        Margins.Right = 10
+        Margins.Bottom = 5
+        Align = alTop
+        Caption = 'Ouvrir'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -24
+        Font.Name = 'Changa SemiBold'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 1
+        OnClick = btn_openClick
+        ExplicitLeft = 13
+        ExplicitTop = 152
+        ExplicitWidth = 137
+      end
+      object btn_save: TButton
+        AlignWithMargins = True
+        Left = 10
+        Top = 220
+        Width = 142
+        Height = 49
+        Margins.Left = 10
+        Margins.Top = 5
+        Margins.Right = 10
+        Align = alTop
+        Caption = 'ENREGISTRER SOUS'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Changa SemiBold'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 2
+        OnClick = btn_saveClick
+        ExplicitWidth = 146
+      end
+      object btn_copy: TButton
+        AlignWithMargins = True
+        Left = 10
+        Top = 277
+        Width = 142
+        Height = 49
+        Margins.Left = 10
+        Margins.Top = 5
+        Margins.Right = 10
+        Align = alTop
+        Caption = 'COPIE'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -24
+        Font.Name = 'Changa SemiBold'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 3
+        OnClick = btn_copyClick
+        ExplicitLeft = 13
+        ExplicitTop = 262
+        ExplicitWidth = 137
+      end
+      object btn_cut: TButton
+        AlignWithMargins = True
+        Left = 10
+        Top = 391
+        Width = 142
+        Height = 49
+        Margins.Left = 10
+        Margins.Top = 5
+        Margins.Right = 10
+        Align = alTop
+        Caption = 'COUPER'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -24
+        Font.Name = 'Changa SemiBold'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 4
+        OnClick = btn_cutClick
+        ExplicitLeft = 13
+        ExplicitTop = 317
+        ExplicitWidth = 137
+      end
+      object Radiobtn_bold: TRadioButton
+        Left = 13
+        Top = 36
+        Width = 137
+        Height = 17
+        Caption = 'GRAS'
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -21
+        Font.Name = 'Changa Medium'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        TabOrder = 5
+        OnClick = Radiobtn_boldClick
+      end
+      object Radiobtn_italic: TRadioButton
+        Left = 13
+        Top = 75
+        Width = 137
+        Height = 17
+        Caption = 'ITALIQUE'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -21
+        Font.Name = 'Changa Medium'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 6
+        OnClick = Radiobtn_italicClick
+      end
+      object Radiobtn_underline: TRadioButton
+        Left = 13
+        Top = 120
+        Width = 137
+        Height = 17
+        Caption = 'SOULIGNER'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -21
+        Font.Name = 'Changa Medium'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 7
+        OnClick = Radiobtn_underlineClick
+      end
+      object btn_paste: TButton
+        AlignWithMargins = True
+        Left = 10
+        Top = 334
+        Width = 142
+        Height = 49
+        Margins.Left = 10
+        Margins.Top = 5
+        Margins.Right = 10
+        Align = alTop
+        Caption = 'COLLER'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -24
+        Font.Name = 'Changa SemiBold'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 8
+        OnClick = btn_pasteClick
+        ExplicitLeft = 5
+        ExplicitTop = 307
+        ExplicitWidth = 166
+      end
+    end
+    object Panel1: TPanel
+      AlignWithMargins = True
+      Left = 50
+      Top = 516
+      Width = 775
+      Height = 62
+      Margins.Left = 50
+      Margins.Top = 5
+      Margins.Right = 50
+      Margins.Bottom = 5
+      Align = alBottom
+      BevelKind = bkFlat
+      BevelOuter = bvNone
+      Color = clWhite
+      ParentBackground = False
+      TabOrder = 3
+      object img_facebook: TImage
+        AlignWithMargins = True
+        Left = 210
+        Top = 5
+        Width = 50
+        Height = 48
+        Margins.Left = 210
+        Margins.Top = 5
+        Margins.Right = 30
+        Margins.Bottom = 5
+        Align = alLeft
+        AutoSize = True
+        Center = True
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000320000
+          003208060000001E3F88B100000006624B474400FF00FF00FFA0BDA793000002
+          6C4944415478DA636418268071A01D30EA91518F0C7230723C629C768695E7CD
+          CB08867F0CAEFF191994801A38E8E1B0FF0C0C3F8076DD65FCFF7FF767318995
+          676799FC26DB23B6413B2499FEFFDD06641AD0C3F1789C798E91E5BFF781D5DE
+          2F48F64868E82AE6577FB88F00991603EB09B84B8F1DD43B6DCBD0D0F08F248F
+          D8056D0B0746EB8A81763F2AF81F7670BDCF6A923C621FB87531908A1968A7A3
+          3A9671E181F55E09A47A642F90721A68C72383FF0CFFF71E5AEFE342A247B6ED
+          076A751868C7A339F7C0C1F55E8E83CA23E2A29C0C7A5A420C9C1CCC0C3C5CAC
+          70F1F357DE325CBFFD61F07B44448883A12C5B97C1D4409481118BED3316DD60
+          58B1E1DEE0F60837170BC3AC6E1B0669492E9C6A8684472202941832E234F0AA
+          19121EE96B346730D2154611FBF7EF3F384FBC79F793E1FFFFFF0CBB0F3E6338
+          7AFAE5E0F6C88A198E0C12629C2862D3165C6758B5E93E91260C128FAC9FEFC2
+          20C8CF862256D97686E1F8995743CB231B16B83008F0A17AA4A2F50CC389B383
+          DC23A0E255520C5142CDE8B666E0E3614551D33DED32C3F9CB6FE1FC8F9F7F31
+          7CFDF6677079840358D9ED58E64E929E96FE0B0C7B0E3F1BFA1E492B39CA70EB
+          DEC7A1ED917FC0E2D72B6A17C38F9F7F87B6475EBEFECE109EBE1F8F8AD1526B
+          D423A31E19F5C8A847463D32EA91518F8C7A64907984FA43A6947A84CC2153EA
+          0F62C785AA805BC4C860C7BEA70C8F9E7E214A3F5983D8C3665A61D84CF48080
+          43E85689FF7F19D60213A7D540FAE13F03C35126168610B2A6DE60001433AF7F
+          7345FE676074037225E9EA03468667FF1919761ED23BBD02574C10ED91A10246
+          3D32D8C0A847061B18361E01000491BC42CCEE7FA70000000049454E44AE4260
+          82}
+        Stretch = True
+        OnClick = img_facebookClick
+        ExplicitTop = -2
+      end
+      object img_twiter: TImage
+        AlignWithMargins = True
+        Left = 300
+        Top = 5
+        Width = 50
+        Height = 48
+        Margins.Left = 10
+        Margins.Top = 5
+        Margins.Right = 0
+        Margins.Bottom = 5
+        Align = alLeft
+        AutoSize = True
+        Center = True
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000320000
+          003208060000001E3F88B100000006624B474400FF00FF00FFA0BDA793000004
+          364944415478DAED986B681C5514C7CF99BBDBB4BBB32651DB8AAD5A2BB1622A
+          28A8D42FD2603F15C508321BDD08A2820FF0516291FA2262451A4450115A9116
+          B449B3AB6DA04ABE9452FDD00F3E504A2B8D453F442DADA50FBBB3D9B6E9DC39
+          FEA7D6476AB23BAF4D96B27F18E6CECC7D9CDFBDE7DE7BEE305D24E29936A001
+          D200A9733540EA4D0D907AD3CC806C39B5C860DDC9CC8BF1A484E43725C6AEB3
+          2373BEA65E76272DD32BC694DF7C816C92D9F4309D2166890CB0CD9EA7C6F92D
+          B49AC393318931078479B5B6D2DBFF793950BC3CA1F85961E357BCFF20348891
+          2F3D6F90B43AD9CC4B5118660DD8ED5AF130925757CB0BA3D6B9220731622BF1
+          B81CD709ED38ED946B39111A243158422F511B86E305376BF685A22894AE80FF
+          7C83D4C210A5C799E96EC732775481AFA0CF24A5CA63A57FF3F17B9A53ABC862
+          1DC41295B7D7A3ECE321208E93D02AB8F55112F75E3668C0B1325F0607F9F464
+          9BD2EAC00525BED0647493953AE8CB94CDC72E51C9A623483505E76074A2985E
+          4A887BDD6CFAB5297356ACA770F25225EAD8245FD043BC468FA436565A493CA9
+          FC5827CC180A0E31C1C8758E955E5369C1A93A4754BE7418B7F9937DC3DCF99E
+          45DED0FBCDA1A9808CBCFD0C13BF139241A391277457FA431FB09585C9DE0783
+          5757A9E667E4F9C875DD4FA82BB37F02C8A0FD34569F7743821CD55973AE9F8C
+          D5F791ADE585CA71F722D5E2AB69A151B8C0B7F0813D18AD517803563C7E3924
+          C821805C190F089D73AF0770EBF79B3F2EA1B11F9DAC7943649064A174B34BFC
+          22929BD1C337A1877B914E4C23C94E6D992B22839CDFC80E4D9BE1FF93ACD7D9
+          CC93D141C89BACA57DD859DB6706841FD5D9F4C69840ECA7B0EABC3F13189A75
+          1B59CD3FC502421B24A95AC6762375DB744288D00F6E97B9D46F7E7FAB50A1BC
+          408920C691EBA60D84F81584246BE305F1D4FF47AB5289B751A29B6ABF728D6B
+          A66BC8320FC70F5238756D92642E76EF369CD57A10F5DC5243904DD8081F0952
+          C03748B250BEDD15F7AB1A1AFFB74E6B564BC89AF34B4D403CA9C1523F4A3C58
+          4B0A26791DA7D15783970B229C2D8C64D36E14F2BD9A0411A2877D6E267D2BAD
+          E433B505F15438DEACA40961B5DC1F3347518B2CBB307AAE1DC87925F2760796
+          486F4276E05A1011E22C4CE9C42E3E1CB682C8D16C628BBD9C0CDE00B7B83E64
+          159A5872DACAE4A3D8111AE45C642CD483642E423D459C007338017E1E052230
+          C8AC417BA943BC0241E47D78BC334AC318C1EF5C91EEB073C23FC8D6D38B95A3
+          7B30EC3762F39B2F7FFD93CAC4D0640975BDE9CE4BF551073B71405406F1B44B
+          12C691F26306C973687C49C4B68A68EE63CDB23648E8110FC87F942894EF1057
+          1EC219FCAE0013FB77F8D04EDC87753A3D44F770396E80C02013B4AD789972D4
+          3284DA57C1DB9B0DA256EF358EC56388BF6DC3A01147AB11EA9A3D1ACBCFEF9A
+          81D4A11A20F5A60648BDA901526F6A80D49B2E1A903F01D1E86542FAB5F15A00
+          00000049454E44AE426082}
+        Stretch = True
+        ExplicitLeft = 366
+        ExplicitTop = 3
+        ExplicitHeight = 50
+      end
+      object img_youtube: TImage
+        AlignWithMargins = True
+        Left = 421
+        Top = 5
+        Width = 50
+        Height = 48
+        Margins.Left = 0
+        Margins.Top = 5
+        Margins.Right = 10
+        Margins.Bottom = 5
+        Align = alRight
+        AutoSize = True
+        Center = True
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000320000
+          003208060000001E3F88B100000006624B474400FF00FF00FFA0BDA793000003
+          564944415478DAED995B48145118C7FF47512A2B7C31F25221F550F4523D64A8
+          6B52143D071148D65BF5D285882E2FA54F49216574B587CA0B8511BDF4B26621
+          B6655A540F5D848842D72B921B6579C99DFE33A396A267DCD9196758E60F67BF
+          99B3B3F37DBF39E73B67E71C811891703A000FC40371B93C10B7C903719B4C83
+          28F948C630D21187C53C4DE69D92351B668943021424B22E69E28FD0CFBA215A
+          B5845813E2B5BA1D4137E62228EAF0DD72106507E2D1836C3AD9C42B3359953E
+          5A96B224CDC48109FD64692368903E3B68BFF0FC3152D128EE31924841946C2C
+          2746350FB36C0A383209BCE0678168D0C06606A2F89042F39A25C3E9F827A98D
+          0F779DA847EFCC40F250C6263DE874D4D3E8BC788A2386200A987E3E74F27091
+          D3114F2985834200A9420B550692CFEE34C22674B3142C1301B4CA4136B23DC2
+          68703A56A9043633E99FC841F2B087C4B74C3B99338F3761AB0FFEB60F44C13E
+          B648B91148112F3C6DDA49E66AA0B416283F09F82B7528EB7596097F5C0EE2C3
+          559AFD5181DC7EA71FB7BC042E1C003E34590D7287200546207C8CD8650988AA
+          701878C479F5CA51A0AFC72A903A826C9183E4E23E6BB75B0632A61F7DC0CD62
+          E0C16560E44F7418026F99EC6BE5203EF869B65A0E32A6D616E0E261A0D91F0D
+          CA67B6C80A2390004D8E6D20637AFE50CF9FAEAF66BC0409B2440E9287371CB5
+          D6D80EA26AE017D3F61C505D020C0D44E2A5972029EE015183BF5B0A549D2154
+          7F245EBA08922A07998DAEA5CE2DB555C0F5137CB61D91FB50D0C20971951188
+          BDC9FEBE11283BA4CF31E6D5C416D92007B16BF8FDD60D5C3B66D56CEF27C836
+          39880F15348596810C0F32074AF4A48E2C0FA697821A76AD9D4620D6FD455187
+          D84B7C070A7EB206E09F6EB045F61A819CA2298E0AA4B886931EF3E0559DD500
+          A341A2882D3221C6A972A490B515A69DCCCEDFF8DD04A99483F8B4A137605F14
+          9628975DEB991C2407697C6B6F773A5203A511A4530E122B8B0FDAB5B1B01CA4
+          81E46001BF696659E974D493F411F1582FEAB5655563100D2616964CC761262F
+          622B1C08C4F822F67C9B4256A77F75CDAA5D2BD12E621B49C9C24224228377D0
+          B715C2A3DB0A422B890C20817622ECFFDB0A42DB3E088D6F2F84D1C55FB4B3DB
+          84CCC4E36DF4B84D1E88DBE481B84D1E88DB1433207F01CC132F421EB251E000
+          00000049454E44AE426082}
+        Stretch = True
+        OnClick = img_youtubeClick
+        ExplicitLeft = 537
+        ExplicitTop = 3
+        ExplicitHeight = 50
+      end
+      object img_calculatrice: TImage
+        AlignWithMargins = True
+        Left = 511
+        Top = 5
+        Width = 50
+        Height = 48
+        Margins.Left = 30
+        Margins.Top = 5
+        Margins.Right = 210
+        Margins.Bottom = 5
+        Align = alRight
+        AutoSize = True
+        Center = True
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000320000
+          003208060000001E3F88B100000006624B474400FF00FF00FFA0BDA79300000E
+          BC4944415478DAED5A09745445D67E5BBF5ED3E9A449674F672364836C842464
+          955DC69155A308134414C441645104111D1D04C3088380882CFE20242AFC4218
+          501C096401134280904EC8BE9274F6DEF7B74DBD36CD30EA68B499FFF7CCA1CE
+          A993BAB7B6FBD5ADAAFBD5EBC0D07F4982FFBF0D7800E40190DF787A00C48984
+          831C067238C8BE0882C8C05F94ADA069BA1BFCA901B90C64CBFF25102EC88261
+          43C4DFAB93801C08B21C181BC8304C30288F01D90BE5E1DDB8875825F091DA38
+          1E2E30CAE520A4C14C136A03636CEE135955FA501886F702606F83F6D6FB0DC4
+          15E4C9C0A874605492DD481812C028A2632B110C330299B93B300C23982BDFC8
+          F7969AF9811E9028D49B2F0CF1F6E479B9F980763F39AFA54FA3AC7F23BFD3AC
+          541160AE8781CA783F800402A3DE0796A5F0BC244D9284109B3435422694CB7C
+          51114F3C82FEBF2E8125A9D970B4D450D7D5063C93733F802CE47BB9BF10FBE1
+          F278B0FAB833B6116AE3904DA5579B95435A7D5DB7D1D4DC0319DBFA3D29ABCD
+          17548BC062A9A413C75487AD9F97C5B6A709D25A91BDBD9F26A8B940AC7416C8
+          53A260AFE5E3762D4D1B5E29C6D831D0A6B9DED463AC5712A6AE219CD01B8594
+          997081189A73B717CD701806E2810E28E8E3028C342028AAC6B85C1D572834B9
+          07059B7C6362D180C444E9A8D0D1BE5C9148ACEFE9E93DB2205BEDBD304DEB3D
+          3321991DA675DFF992FEF3371A80579E7316C89302B96C45EC9EE7EC409A7614
+          14A94AEB423DC2C2DAFC62E318694808D7D5C75788601C94EFEACA475004E5B9
+          BA096118421C0370F87C3E8AE3DC9178ADA5B4B8E6EC9BAF5189C756C7B032F0
+          587BF5AA036051183F67813C21F093AE8CDDF7FC4456683FF84D09DA45D1D9FB
+          0F648DC4B05F9A689224774E4C32269D5CCF433828973D2B65B3DF513134CD5E
+          D943CE00C9E6FBB8AF8ADBBF228515B48AF6DB6DB9676D2B2E5C8AFD4F0061D3
+          FBE9131B23B7FF0117C83D0259F9DA821D3584DEB4842D3A03E411BE97DBA6B8
+          032F24D957CC4A5A2A1ECF35ACA9B83EEA3F0724AD217CEB939828C42B84956F
+          3EBBA7C2DCABD90A8AA79D019281BBBBEC187F6455022B30244D94CFDD6A5D7B
+          ED86C85983C176A1AD7ABDCE21EB07FBD5E7376F560E76B47A26E6AD09403898
+          FD9654AC3E7C45DFACDC038A9F3A03241613708F4FF8ECE548FBE4144D5E9DB7
+          6D68E1B17CBD6C7458E8480C36AB54AAFEC6C66E657595B6AFAE9E1C6A6BE519
+          0607469136AB178C201A472005B79A593221AC2774E5EF92101E87E7E8AF58F7
+          F1657D43F741503CE20C906070E82E257FB121C0A150FEADA2ACE3E08548819B
+          5BABBB3C482F9279D02887035BF43AC6AAD521E02F6A1A52096D26A398220809
+          84A17A5CCC1FE0F9484D822019241AE323140679C9783EEE3E3002A33F678062
+          2DF048A3722F28E63B03440A56AD31A560A3FBBD4A42A5EF575D6FE930B5F699
+          688B15823918840979082AE4225C4F098FE7E9EE82BB8B5C396E422908A4D848
+          3CF7EF52F5AA43570CAD3DDB41B1C0192008A02866000403410D1941FB5F9528
+          9355DFB2E7CB1BBADB7744281723C6BC3ADF0378EFBBC3BEEC83AB8077BD068A
+          85CE006109E04062FE5A0CACB8E4E7DAB29E224D362B69B0988441327F84CB11
+          38EAB4375A14755B4EB20C00055EB6E152F140CC9EE7E2100CC5CB67BF33941E
+          C8BDFD7C8A487CA1D9AC39D6820AE23F5E3981ED57B9F8AF376C43863F42DFD1
+          7BA780DC8EDBB75CC8F395DACF0965B0E88C1DFDDDA4D16AB30EEACC9E536262
+          101CE3AB2A9BAB1BDFFECC8F837EC756090A12876D98D7EA9E1C1EC7CA6C3CD8
+          3097D62E988C0798AC8C6DC6CB46BD6BCEEF088F293189658F6E31A9FFE48FE3
+          288C0D9AA841F9362595727AA3A7BDDF937FA9250C9605A058ED2C90D2A8AD0B
+          DDC55172FBCD55B96867152057989B0B62EC1EA07C7C9E9ED6E5FDFBC494CE63
+          45A5FEB557992BBB85196CBB4D872CC5BB2BDC91B1EF2D491FEE77F3F86A089E
+          97C1B107D339AF9B8BAE8AA3E0E0E7676696CFDEDAD3B8CE8BE323C6ECF149B4
+          A953935CB091E568E8D5C7729B298B6D0650B7380BE46FA3D7CDF11A9511399E
+          956F2CDD7DEDE052825930059FF0F43673E9594D003566537696AEA6E376FB5B
+          C79173DB048C46CFD8F20A6DEA330D2E3CC00AEC04B0EE8DFC62697F07F7B585
+          386A3433E49663360E1D17650C59F56866C563B98D25CF4839B13E7810DB56BC
+          B9B32BEEC84B3C8EAB7054F99CAD5D3449250275AF5340C063EA73FFC5937C7C
+          E724A7B272C39693C5C69B0D7E021C36698D8CB73433BA3A74CDAC490CCD908A
+          D587BEB5F4AA3D600E6A40B9B805BC5D08F992C993D87EB49530751C2EBCA6B9
+          D586A338460B43BD49BFECB47070CB7982ED53F3F502099E2CE7B29C0A92BD75
+          A72EE8CF39904BB86F04EB2D9AA2D8A7B1CE592047BC6727C9E54F4FCE646586
+          A46C8606652B60F48C20D83300E373852319E7A752E5C21DD505F3C4586608D7
+          BE7D437295D78439D329D9D4D8E46120F1F7C3231F7ACF4D0E97E74CCABC576F
+          EE1AEC44053C3E88171E0E1DF08A4DA7E8AC1D2C5268611E870E5A3A3505C411
+          FE779510D3FF4DD535F5B52613B86E11BF05993271947FB81DC8A2BFDEFA6C96
+          009D1EC68F66E5E43DBDA59A69A990DFFC89E9ECB6232DB64780BAC959203B7D
+          1E4B8D0F5898693FC443650D556DFBBFA620ADDE9BA4216EF85B0B7A25314151
+          6C5DDDE6BC12B2BE5D363703ED2DBC418B4C4121DAF0D71F9FCCD6356C397189
+          5034C9C0611FC440883C748E884AFAE255091B300131AC3C388983CD8912D82F
+          82491FF51577258D8702166565B267D2D2A77D19A88B9D05B2DBEFA98C18BFC7
+          D3ECB74FE396134581EA164EF907A294FD67ACE5EB4EF011C7810657ACE2EC66
+          189E3A9E135DDB4677C42C334280DEC8D9BA9E331557C4172F32370F8AEC8F34
+          FE746D7BD4BE3F0A78325759E3BB5F94C6F5B531058B65F6C51A0DB69660E94C
+          DA236B6C52CDAB474B75B59D2CD73AEA2C908FFD731E0AF59D9B6237A031F754
+          51BCA5113D9F2B4CB7D8188BE8619D31316F2D1715F244AC476679763387D7F3
+          33CD36482B9AA18553CEBC66FF4801628E52F1EC6EBAFAB00B33A4A58D19AB8C
+          B2844FD6703031DF85D498D43796EDED45AC367B5B1AC38C09C7D7FA82282F6C
+          DA79A678E062751150BFE92C90CF03964EF5F5F97DA2FD9508CE46C7AD170FD0
+          304DB3FD51064198C4A3AB25EC5715437D5753CD864F5C208A76616088E4FB4A
+          15B11F2C4F75CC55F7FAF162400065802C52A2703F55C4E6EC0C70BF3BA6A248
+          A3458FE21C06DC7AEC33C1FE0DE04E7EC995EE4F2F3702D6BFC42920208E9C0B
+          79F111A96C4A4C9243471394150429335B06D4C5E55F582C78608348ACC5F8B8
+          0006F4E3FBE381A70063ED55F761EE229791DC7883C535954DEF150C8061673A
+          0BA428EC95B922695A448243676CE969B5694C8430D8D3177713FDE09165EE56
+          DD5195D7DFA1CC36CA3F3B3D11ACB0FD7D6168E86EAA597F4482638CC646C2E2
+          98DDCF5AF9FE1E76EAA3BDD9A6182AAF53794C1AE7ED32C62FCC3196BEBEABBE
+          E695236A0064A2B340CA22DEC8E64B1242631C3AC08D0C5231DCAAD2337EF225
+          539BBD674D98701744677F47F5CA03C2F000B4B15949F904AE9E33204D8B6423
+          33D4BCA3E0620AD9889D7A8B9FF1D81BE64BC5643006F8587AD38ED345AAE2DA
+          C85477415D85DA1C00CB2403E3DE5F1A8DF27081A1B5B745F1D2212D0092F06F
+          6D1C21909B806BE10EAE459A6DA6CA27B6DBC84257495D3BDD3EF619BD5BFCA1
+          95267C94D89BADEFFBFBAD4AF4F45764FD5151F27C606C0913C2008FDAA37BDF
+          D75565E4C9AF386DF92EE3B7E5594AB716DBB9586AD50B1F5D5E8E11D0EB61EE
+          6904D899D3AF2ACB5A7C6548F4B63FA4195B7A9BAB571F520D7FAA750AC8F5E8
+          DCC57C962EB032435044F9BC6DA4FE2B31C3C761BE78A6AE2968F35336F158B9
+          3D98818057D3B7EB0433785A3C76CB314BC9D6BF8BD0E1030F81C3AC51ACF8B0
+          9E4F99F80613E3C60BF3EF648D6D78FBF34B33953DD0FBD1B287D876F506A22D
+          BDB2979C70E295D1AA6BCDD50D6F7FD607804C7316C895A8777324E208BF4887
+          4EB1E67009D6DBEBCEC361AB1A1691F187572642C31FE5681B455C5FBCAB894B
+          5A1093151AE5F9E8F8DAA067A6FD0B2B0087BD11C231112E167AC018C2E93852
+          58E45B58057F9DE4636FA72669756851A731F9D4063F65414559E7E10BB7C1AD
+          B5D459205F86AE9E25F57828FAEE3960E946DF85AA4ADA68B1794C8D8DFAB147
+          D7D095BAEBC490DE020EB3D8352E68AC433F585A7BBD2BEFB2CDAC1C0A93A68E
+          5184BD322FABFF9B5BE5E4C1F3C8CD8C00FB1C6D46A223B1A2874E3AB93EE836
+          B8B235556D27817A8F5340401CD9257B387E5CF0F219590E1D61306BEB36E529
+          4CED7D63209AE10947FBDE1CFBDEE20C473D98BC44AF680F0FF4425BEFF4517E
+          E2D4A8A6B075B3EDDBA6E2F1ED0DCB6640839B16F1227DE7EB49F0EEF018B8A4
+          A8D0EC3DC73D37C1DBDD4C419A176A07D45D722F2AF2CF0BB3CAE7BFDB46DB88
+          D9EC46700A084853392E82F712F3D6DC5DD5D6BD5F96F2ABABB1EB1F09C3C57C
+          D8953B4D3B10FF3F2FA11C89D0FE30BAF9EC0757D7CF30919B7378A9E7CA88EA
+          B95B2824F1D375D1C37515B9D96626673A1EE5FA88DE9852B0D193D418FB6B36
+          7ED264EBD7BA4218C2B846C907C11B2861A0A4A611CC4582F391F293BB668440
+          50B0BDAAC1CD6376C492C1CB7555EAFDA790BE53E271ACECF2B0AE296CE7329C
+          EF27B5F32AE517E5E583F917DDA727719467CB6C816E5313DA1D1EEDFEDF6FBF
+          559F28729B1889F615D661D2C4FCB5637F6C52F0EED756E6EC1A02DE580BFDC4
+          57C65F02844D59088AE445BEB348238EF48F0091DD5631FF5D63E218A4A6A39F
+          11F4ABE9A084232F51C023764A4FDB486BD7C96FAB88419D459A112595C40645
+          DF3B58E7D14BA584C6487BCF4E960B0246057E7F324267D6DC5AF1613BA93797
+          8243FEE2CF19F74B7F43CC065464B77442586DC033534653068B5957D735C0F5
+          10F324F1A111088EF27EE1783F48E63B831DCAD357DBFB0B6F45C00C740880D8
+          CC3AE77E036113FBE3E6AB60CF3E01C8DD00EEE93AC095B91208FCC3A1688284
+          493361AFA00C668CB9B792A211CA4ADCFD6188B6100220CB004F53B1B72400B0
+          0FA8EB476A9433BFEAB231830D902C2762B793DB8FB4A1A07FBEB375C332FBB3
+          334B366990B5F7B46571B683ACFA35C63CF88781DF5A7A00E4B796FE01B02299
+          8D5C1931200000000049454E44AE426082}
+        Stretch = True
+        OnClick = img_calculatriceClick
+        ExplicitLeft = 713
+        ExplicitTop = 3
+        ExplicitHeight = 50
+      end
+    end
+    object RichEdit1: TRichEdit
+      AlignWithMargins = True
+      Left = 175
+      Top = 86
+      Width = 525
+      Height = 422
+      Align = alClient
+      Alignment = taCenter
+      Color = clWhite
+      Font.Charset = ARABIC_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -24
+      Font.Name = 'Changa SemiBold'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 4
+      Zoom = 100
+      ExplicitLeft = 171
+      ExplicitTop = 88
+      ExplicitWidth = 517
+      ExplicitHeight = 480
+    end
+  end
+  object Timer1: TTimer
+    Interval = 1
+    OnTimer = Timer1Timer
+    Left = 24
+    Top = 16
+  end
+  object FontDialog1: TFontDialog
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Left = 496
+    Top = 256
+  end
+  object ColorDialog1: TColorDialog
+    Left = 344
+    Top = 256
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = 'Text FILE|(*.txt)|(*.*)|*.*'
+    InitialDir = 'C:\Users\kikatokiro\Desktop'
+    Title = 'Save File To'
+    Left = 336
+    Top = 160
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'Text File|(*.txt)|(*.*)|*.*'
+    InitialDir = 'C:\Users\kikatokiro\Desktop'
+    Title = 'Open File '
+    Left = 480
+    Top = 160
+  end
+end

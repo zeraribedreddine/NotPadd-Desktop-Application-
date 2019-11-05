@@ -1,0 +1,75 @@
+object frm_about: Tfrm_about
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'ABOUT'
+  ClientHeight = 228
+  ClientWidth = 409
+  Color = clWhite
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -21
+  Font.Name = 'Roboto Cn'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 25
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 409
+    Height = 228
+    Align = alClient
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitLeft = 112
+    ExplicitTop = 88
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object Label1: TLabel
+      Left = 37
+      Top = 10
+      Width = 333
+      Height = 68
+      Alignment = taCenter
+      Caption = 'NOTPADD PLUS V 1.0'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -37
+      Font.Name = 'Changa SemiBold'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 101
+      Top = 82
+      Width = 219
+      Height = 55
+      Alignment = taCenter
+      Caption = #1575#1604#1605#1578#1585#1576#1589#1577' '#1601#1585#1610#1600#1600#1600#1575#1604
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clRed
+      Font.Height = -29
+      Font.Name = 'Cairo'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Button1: TButton
+      Left = 168
+      Top = 176
+      Width = 75
+      Height = 33
+      Caption = 'OK'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Roboto Light'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+end

@@ -1,0 +1,27 @@
+unit Uni_about;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  Tfrm_about = class(TForm)
+    Panel1: TPanel;
+    Button1: TButton;
+    Label1: TLabel;
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  frm_about: Tfrm_about;
+
+implementation
+
+{$R *.dfm}
+
+end.
